@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: whitesmoke;
+    color: #000000;
+    padding: 0.5rem;
+    border-radius: 0px 0px 60px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 2);
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header li {
+    margin: 0 1rem;
+  }
+  
+  header a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .restaurant_name {
+    height: 60px;
+  }
+
+  .border{
+    border: 1px solid black;
+  }
+
+  .courses{
+    margin-top: 50px;
+    padding: 15px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .course-item{
+    height: 70%;
+    width: 100%;
+  }
+
+  .item{
+    height: 130px;
+    width: 350px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+
+  .size{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  .item-string{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    height: 100%;
+    width: 65%;
+  }
+
+  .order-item-btn{
+    background-color: gray;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 10px;
+
+  }
+  .order-item-btn:hover{
+    cursor: pointer;
+  }
+
+  .item-img{
+    padding: 5px;
+    height: 100%;
+    width: 34%;
+  }
+
+  .img-item{
+    height: 100%;
+    width: 100%;
+    object-fit: contain
+  }

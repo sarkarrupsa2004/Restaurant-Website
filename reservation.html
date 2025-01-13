@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rup's Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="reservation.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="restaurant name.png" class="restaurant_name" />
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                |
+                <li><a href="menu.html">MENU</a></li>
+                |
+                <li><a href="reservation.html">RESERVATIONS</a></li>
+                |
+                <li><a href="event.html">EVENTS</a></li>
+                |
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="form-heading"><u>Book your tables</u></h1>
+        <form id="reservationForm">
+            <label class="label-in" for="adults">Number of Adults:</label>
+            <input class="input-in" type="number" id="adults" min="0"><br>
+
+            <label class="label-in" for="children">Number of Children:</label>
+            <input class="input-in" type="number" id="children" min="0">
+
+            <div class="names-section" id="namesSection">
+                <!-- Dynamically added name fields will go here -->
+            </div>
+
+            <button type="button" id="bookButton">Book</button>
+        </form>
+    </main>
+
+    <script src="reserve.js"></script>
+</body>
+
+</html>

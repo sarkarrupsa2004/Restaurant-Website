@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="smalldialog.css">
+  <title>Menu</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <img src="restaurant name.png" class="restaurant_name" />
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        |
+        <li><a href="menu.html">MENU</a></li>
+        |
+        <li><a href="reservation.html">RESERVATIONS</a></li>
+        |
+        <li><a href="event.html">EVENTS</a></li>
+        |
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- APPETIZER -->
+    <div class="courses border">
+      <div class="course-head">
+        <h1><u>Appetizer</u></h1>
+      </div>
+      <div class="course-item">
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>corn cakes tomato salsa</h3>
+              <h4>Price: 250</h4>
+              <div class="order-item-btn" id="orderBtn" onclick="openOrderModal()">
+                <center><b>Order Now</b></center>
+              </div>
+
+
+              <!-- Modal Structure -->
+              <div id="orderModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+                  <div class="item-details">
+                    <img src="menupics/salsa..jpeg" alt="Item" class="item-image">
+                    <div class="item-info">
+                      <h3 id="itemName">corn cakes tomato salsa</h3>
+                      <p id="itemPrice">₹250</p>
+                    </div>
+                  </div>
+                  <div class="quantity-slider">
+                    <label for="quantity">Quantity:</label>
+                    <input type="range" id="quantity" name="quantity" min="1" max="10" value="1"
+                      oninput="updateQuantity(this.value)">
+                    <span id="quantityValue">1</span>
+                  </div>
+                  <div class="actions">
+                    <button class="confirm-btn" onclick="confirmOrder()">Confirm</button>
+                    <button class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+                  </div>
+                </div>
+                    
+              </div>
+
+            </div>
+            <div class="item-img">
+              <img src="menupics/salsa..jpeg" alt="" class="img-item">
+            </div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Beetroots and cheese croquettes</h3>
+              <h4>Price: 350</h4>
+              <div class="order-item-btn" id="orderBtn" onclick="openOrderModal2()">
+                <center><b>Order Now</b></center>
+              </div>
+
+              <!-- Modal Structure -->
+              <div id="orderModal2" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+                  <div class="item-details">
+                    <img src="menupics/beet.jpeg" alt="Item" class="item-image">
+                    <div class="item-info">
+                      <h3 id="itemName2">Beetroots and cheese croquettes</h3>
+                      <p id="itemPrice2">₹350</p>
+                    </div>
+                  </div>
+                  <div class="quantity-slider">
+                    <label for="quantity">Quantity:</label>
+                    <input type="range" id="quantity2" name="quantity2" min="1" max="10" value="1"
+                      oninput="updateQuantity(this.value)">
+                    <span id="quantityValue2">1</span>
+                  </div>
+                  <div class="actions">
+                    <button class="confirm-btn" onclick="confirmOrder2()">Confirm</button>
+                    <button class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+                  </div>
+                </div>
+                    
+              </div >
+            </div> <div class="item-img">
+              <img src="menupics/beet.jpeg" alt="" class="img-item">
+            </div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>bruschetta</h3>
+              <h4>Price: 250</h4>
+              <div class="order-item-btn" id="orderBtn" onclick="openOrderModal3()">
+                <center><b>Order Now</b></center>
+              </div>
+
+               <!-- Modal Structure -->
+    <div id="orderModal3" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+          <div class="item-details">
+              <img src="menupics/bruschetta.jpeg" alt="Item" class="item-image">
+              <div class="item-info">
+                  <h3 id="itemName3">Bruschetta
+                  </h3>
+                  <p id="itemPrice3">₹250</p>
+              </div>
+          </div>
+          <div class="quantity-slider">
+              <label for="quantity">Quantity:</label>
+              <input type="range" id="quantity3" name="quantity3" min="1" max="10" value="1" oninput="updateQuantity(this.value)">
+              <span id="quantityValue3">1</span>
+          </div>
+          <div class="actions">
+              <button class="confirm-btn" onclick="confirmOrder3()">Confirm</button>
+              <button class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+          </div>
+      </div>
+    </div>
+
+
+            </div>
+            <div class="item-img">
+              <img src="menupics/bruschetta.jpeg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Garlic bread</h3>
+              <h4>Price: 120</h4>
+              <div class="order-item-btn" id="orderBtn" onclick="openOrderModal4()">
+                <center><b>Order Now</b></center>
+              </div>
+
+               <!-- Modal Structure -->
+    <div id="orderModal4" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+          <div class="item-details">
+              <img src="menupics/garlic.jpeg" alt="Item" class="item-image">
+              <div class="item-info">
+                  <h3 id="itemName4">Garlic bread</h3>
+                  <p id="itemPrice4">₹120</p>
+              </div>
+          </div>
+          <div class="quantity-slider">
+              <label for="quantity">Quantity:</label>
+              <input type="range" id="quantity4" name="quantity4" min="1" max="10" value="1" oninput="updateQuantity(this.value)">
+              <span id="quantityValue4">1</span>
+          </div>
+          <div class="actions">
+              <button class="confirm-btn" onclick="confirmOrder4()">Confirm</button>
+              <button class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+          </div>
+      </div>
+    </div>
+            </div>
+            <div class="item-img">
+              <img src="menupics/garlic.jpeg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Mexican pinwheel</h3>
+              <h4>Price: 250</h4>
+              <div class="order-item-btn" id="orderBtn" onclick="openOrderModal5()">
+                <center><b>Order Now</b></center>
+              </div>
+
+               <!-- Modal Structure -->
+    <div id="orderModal5" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+          <div class="item-details">
+              <img src="menupics/mexican.jpeg" alt="Item" class="item-image">
+              <div class="item-info">
+                  <h3 id="itemName5">Mexican pinwheel</h3>
+                  <p id="itemPrice5">₹250</p>
+              </div>
+          </div>
+          <div class="quantity-slider">
+              <label for="quantity">Quantity:</label>
+              <input type="range" id="quantity5" name="quantity55" min="1" max="10" value="1" oninput="updateQuantity(this.value)">
+              <span id="quantityValue5">1</span>
+          </div>
+          <div class="actions">
+              <button class="confirm-btn" onclick="confirmOrder5()">Confirm</button>
+              <button class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+          </div>
+      </div>
+    </div>
+
+
+
+            </div>
+            <div class="item-img">
+              <img src="menupics/mexican.jpeg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Nachos </h3>
+              <h4>Price: 165</h4>
+              <div class="order-item-btn" id="orderBtn" onclick="openOrderModal6()">
+                <center><b>Order Now</b></center>
+              </div>
+
+               <!-- Modal Structure -->
+    <div id="orderModal6" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+          <div class="item-details">
+              <img src="menupics/nachos.jpeg" alt="Item" class="item-image">
+              <div class="item-info">
+                  <h3 id="itemName6">Nachos</h3>
+                  <p id="itemPrice6">₹165</p>
+              </div>
+          </div>
+          <div class="quantity-slider">
+              <label for="quantity">Quantity:</label>
+              <input type="range" id="quantity6" name="quantity6" min="1" max="10" value="1" oninput="updateQuantity(this.value)">
+              <span id="quantityValue6">1</span>
+          </div>
+          <div class="actions">
+              <button class="confirm-btn" onclick="confirmOrder6()">Confirm</button>
+              <button class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+          </div>
+      </div>
+    </div>
+
+
+            </div>
+            <div class="item-img">
+              <img src="menupics/nachos.jpeg" alt="" class="img-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- FRIES -->
+    <div class="courses border">
+      <div class="course-head">
+        <h1><u>Fries</u></h1>
+      </div>
+      <div class="course-item">
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>cheesy fries</h3>
+              <h4>Price: 200</h4>
+              <div class="order-item-btn" id="orderBtn" onclick="openOrderModal7()">
+                <center><b>Order Now</b></center>
+              </div>
+
+              <!-- Modal Structure -->
+    <div id="orderModal7" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+          <div class="item-details">
+              <img src="menupics/cheesy.jpeg" alt="Item" class="item-image">
+              <div class="item-info">
+                  <h3 id="itemName7">cheesy fries
+                  </h3>
+                  <p id="itemPrice7">₹200</p>
+              </div>
+          </div>
+          <div class="quantity-slider">
+              <label for="quantity">Quantity:</label>
+              <input type="range" id="quantity7" name="quantity7" min="1" max="10" value="1" oninput="updateQuantity(this.value)">
+              <span id="quantityValue7">1</span>
+          </div>
+          <div class="actions">
+              <button class="confirm-btn" onclick="confirmOrder7()">Confirm</button>
+              <button class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+          </div>
+      </div>
+    </div>
+
+
+            </div>
+            <div class="item-img">
+              <img src="menupics/cheesy.jpeg" alt="" class="img-item">
+            </div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Mexican Fries
+              </h3>
+              <h4>Price: 300</h4>
+              <div class="order-item-btn" id="orderBtn" onclick="openOrderModal8()">
+                <center><b>Order Now</b></center>
+              </div>
+
+              <!-- Modal Structure -->
+    <div id="orderModal8" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+          <div class="item-details">
+              <img src="menupics/mexifries.jpeg" alt="Item" class="item-image">
+              <div class="item-info">
+                  <h3 id="itemName8">Mexican Fries</h3>
+                  <p id="itemPrice8">₹300</p>
+              </div>
+          </div>
+          <div class="quantity-slider">
+              <label for="quantity">Quantity:</label>
+              <input type="range" id="quantity" name="quantity" min="1" max="10" value="1" oninput="updateQuantity(this.value)">
+              <span id="quantityValue8">1</span>
+          </div>
+          <div class="actions">
+              <button class="confirm-btn" onclick="confirmOrder()">Confirm</button>
+              <button class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+          </div>
+      </div>
+    </div>
+            </div>
+            <div class="item-img">
+              <img src="menupics/mexifries.jpeg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>chicken Nuggets
+              </h3>
+              <h4>Price: 280</h4>
+              <div class="order-item-btn" id="orderBtn" onclick="openOrderModal9()">
+                <center><b>Order Now</b></center>
+              </div>
+
+              <!-- Modal Structure -->
+    <div id="orderModal9" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+          <div class="item-details">
+              <img src="menupics/nuggets.jpeg" alt="Item" class="item-image">
+              <div class="item-info">
+                  <h3 id="itemName9">chicken Nuggets</h3>
+                  <p id="itemPrice9">₹280</p>
+              </div>
+          </div>
+          <div class="quantity-slider">
+              <label for="quantity">Quantity:</label>
+              <input type="range" id="quantity" name="quantity" min="1" max="10" value="1" oninput="updateQuantity(this.value)">
+              <span id="quantityValue9">1</span>
+          </div>
+          <div class="actions">
+              <button class="confirm-btn" onclick="confirmOrder()">Confirm</button>
+              <button class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+          </div>
+      </div>
+    </div>
+            </div>
+            <div class="item-img">
+              <img src="menupics/nuggets.jpeg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Chicken Milanese
+              </h3>
+              <h4>Price: 300
+              </h4>
+              <div class="order-item-btn" id="orderBtn" onclick="openOrderModal10()">
+                <center><b>Order Now</b></center>
+              </div>
+
+              
+              <!-- Modal Structure -->
+    <div id="orderModal10" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+          <div class="item-details">
+              <img src="menupics/milanese.jpeg" alt="Item" class="item-image">
+              <div class="item-info">
+                  <h3 id="itemName10">Chicken Milanese</h3>
+                  <p id="itemPrice10">₹300</p>
+              </div>
+          </div>
+          <div class="quantity-slider">
+              <label for="quantity">Quantity:</label>
+              <input type="range" id="quantity" name="quantity" min="1" max="10" value="1" oninput="updateQuantity(this.value)">
+              <span id="quantityValue10">1</span>
+          </div>
+          <div class="actions">
+              <button class="confirm-btn" onclick="confirmOrder()">Confirm</button>
+              <button class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+          </div>
+      </div>
+    </div>
+            </div>
+            <div class="item-img">
+              <img src="menupics/milanese.jpeg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>crispy honey chicken with sesame
+              </h3>
+              <h4>Price: 300
+              </h4>
+              <div class="order-item-btn" id="orderBtn" onclick="openOrderModal11()">
+                <center><b>Order Now</b></center>
+              </div>
+
+                <!-- Modal Structure -->
+    <div id="orderModal11" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+          <div class="item-details">
+              <img src="menupics/honey.jpeg" alt="Item" class="item-image">
+              <div class="item-info">
+                  <h3 id="itemName11">crispy honey chicken with sesame</h3>
+                  <p id="itemPrice11">₹300</p>
+              </div>
+          </div>
+          <div class="quantity-slider">
+              <label for="quantity">Quantity:</label>
+              <input type="range" id="quantity" name="quantity" min="1" max="10" value="1" oninput="updateQuantity(this.value)">
+              <span id="quantityValue11">1</span>
+          </div>
+          <div class="actions">
+              <button class="confirm-btn" onclick="confirmOrder()">Confirm</button>
+              <button class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+          </div>
+      </div>
+    </div>
+
+              
+            </div>
+            <div class="item-img">
+              <img src="menupics/honey.jpeg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Grilled Fish
+              </h3>
+              <h4>Price: 550
+              </h4>
+              <div class="order-item-btn" id="orderBtn" onclick="openOrderModal12()">
+                <center><b>Order Now</b></center>
+              </div>
+
+               <!-- Modal Structure -->
+    <div id="orderModal12" class="modal">
+      <div class="modal-content">
+          <span class="close-btn" onclick="closeOrderModal()">&times;</span>
+          <div class="item-details">
+              <img src="menupics/grilled.jpeg" alt="Item" class="item-image">
+              <div class="item-info">
+                  <h3 id="itemName12">Grilled Fish</h3>
+                  <p id="itemPrice12">₹500</p>
+              </div>
+          </div>
+          <div class="quantity-slider">
+              <label for="quantity">Quantity:</label>
+              <input type="range" id="quantity" name="quantity" min="1" max="10" value="1" oninput="updateQuantity(this.value)">
+              <span id="quantityValue12">1</span>
+          </div>
+          <div class="actions">
+              <button class="confirm-btn" onclick="confirmOrder()">Confirm</button>
+              <button class="cancel-btn" onclick="closeOrderModal()">Cancel</button>
+          </div>
+      </div>
+    </div>
+
+
+            </div>
+            <div class="item-img">
+              <img src="menupics/grilled.jpeg" alt="" class="img-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SALAD -->
+    <div class="courses border">
+      <div class="course-head">
+        <h1><u>Salad</u></h1>
+      </div>
+      <div class="course-item">
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+
+
+              
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item">
+            </div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOUP -->
+    <div class="courses border">
+      <div class="course-head">
+        <h1><u>Soup</u></h1>
+      </div>
+      <div class="course-item">
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item">
+            </div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PIZZA -->
+    <div class="courses border">
+      <div class="course-head">
+        <h1><u>Pizza</u></h1>
+      </div>
+      <div class="course-item">
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item">
+            </div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PASTA -->
+    <div class="courses border">
+      <div class="course-head">
+        <h1><u>Pasta</u></h1>
+      </div>
+      <div class="course-item">
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item">
+            </div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+        <div class="item border">
+          <div class="size">
+            <div class="item-string">
+              <h3>Item Name</h3>
+              <h4>Price: $999</h4>
+              <div class="order-item-btn">
+                <center><b>Order Now</b></center>
+              </div>
+            </div>
+            <div class="item-img">
+              <img src="img2.jpg" alt="" class="img-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="menu.js"></script>
+
+
+</body>
+
+</html>
